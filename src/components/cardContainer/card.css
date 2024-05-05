@@ -1,0 +1,161 @@
+.card{
+    background-color: white;
+    border-radius: 8px;
+    margin: 1rem 0.2rem;
+    overflow: hidden;
+}
+
+.cardHeader{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    direction: rtl;
+    padding: 0.5rem;
+}
+
+.cardHeaderIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: large;
+    border-radius: 10%;
+    background-color: #ACC294;
+    gap: 6px;
+    padding: 5px;
+
+    .CardIcon{
+        cursor: pointer;
+        height: 14px;
+        width: 14px;
+        
+    }
+}
+
+.ProductImage{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    p{
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: bold;
+        padding: 1rem;
+        direction: rtl;
+        text-align: justify;
+    }
+}
+
+
+.oneToLast{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+    .seller{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        background-color: #F5F5F5;
+        padding: 0.5rem;
+        border-radius: 10%;
+        font-size: large;
+        color: #878787;
+        
+        span{
+            font-size: 12px;
+            line-height: 14px;
+        }
+        .sellerIcon{
+            height: 18px;
+            width: 18px;
+
+        }
+    }
+
+    .mark{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #878787;
+        gap: 0.5rem;
+        font-size: 14px;
+
+        .starIcon{
+            height: 12px;
+            width: 12px;
+            color: #DD794F;
+        }
+    }
+}
+
+.PricePlus{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+
+    .price{
+        display: flex;
+        flex-direction: column;
+
+        .prePrice{
+            color: #C4C6C2;
+            text-decoration: line-through;
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: 300;
+        }
+
+        .curPrice{
+            direction: rtl;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.3rem;
+            font-size: larger;
+
+            .number{
+                font-size: 18px;
+                line-height: 14px;
+                color: #80AD01;
+                font-weight: bold;
+            }
+
+            .unit{
+                font-size: 10px;
+                line-height: 14px;
+                color: #878787;
+                font-weight: bold;
+            }
+
+        }
+    }
+    
+    .plus{
+        display: flex;
+        align-items: center;
+        height: 35px;
+        width: 35px;
+        color: #80AD01;
+        font-size: 3em;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 768px) {
+    .plus{
+        display: none;
+    }
+    
+    .cardHeader{
+        gap: 0.5rem;
+    }
+}

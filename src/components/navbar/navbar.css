@@ -1,0 +1,180 @@
+.NavBar{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.NavBarItems{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    height: 54px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #ebebeb;
+    padding: 0 3rem;
+    font-size: 1.2rem;
+    direction: rtl;
+}
+
+.menuIcon{
+    display: none;
+}
+
+.ShopIcon{
+    height: 2rem;
+}
+
+
+.NavButtons{
+    
+    ul{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        gap: 39px;
+        font-size: 14px;
+        font-weight: bold;
+        list-style-type: none;
+
+    }
+    
+    li{
+        padding: 0 14px;
+        :hover{
+            color: #80ad01;
+            text-decoration: underline;
+        }
+
+        .beSeller{
+            display: none;
+        }
+    }
+
+
+    a{
+        text-decoration: none;
+        color: #6b6b6b;
+        font-weight: 400;
+    }
+
+    a.active{
+        color: #80ad01;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    
+}
+
+.NavIcons{
+    display: flex;
+    gap: 10px;
+    color: #6b6b6b;
+    
+    a{
+        text-decoration: none;
+        .NavIcon{
+            height: 21px;
+            width: 21px;
+        }    
+    }
+    
+}
+
+@media (max-width: 768px) {
+    
+    .NavBarItems{
+        direction: ltr;
+        padding: 0 1rem;
+    }
+
+
+    .menuIcon{
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+        padding: 0 1rem;
+        cursor: pointer;
+        width: 48px;
+        height: 48px;
+        direction: rtl;
+        gap: 0.8rem;
+    }
+
+    .ShopIcon{
+        height: 2rem;
+    }
+    
+    .displayNavButtons{
+        display: none;
+    }
+
+    .NavButtons{
+        position: fixed;
+        top: 54px;
+        right: 0;
+        width: 100%;
+        background-color: white;
+        padding: 0 16px;
+        border-bottom-right-radius: 35px;
+        border-bottom-left-radius: 35px;
+        border-bottom: 3px solid #ebebeb;
+
+        font-size: 14px;
+        
+        ul{
+            display: flex ;
+            flex-direction: column !important;
+            align-items: end;
+            width: 100%;
+        
+            li{
+                margin: 0;
+                padding: 0 ;
+
+                .home{
+                    padding: 0;
+                    margin: 0;
+                    display: none;
+                }
+
+                .beSeller{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    direction: rtl;
+                    gap: 10px;
+                    margin-bottom: 16px;
+                    padding-bottom: 8px;
+
+                    .icon{
+                        height: 20px   ;
+                        width: 20px;
+    
+                    }
+                    span{
+                        font-size: 14px;
+                        font-weight: bolder;
+                    }
+                }
+            }
+            
+        }
+
+        
+    }
+    
+    .NavIcons{
+        display: none;
+        gap: 2rem;
+        color: #6b6b6b;
+        a{
+            text-decoration: none;
+            
+        }
+    }
+        
+}

@@ -1,0 +1,226 @@
+.TagedProductModal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999; /* Sit on top */
+    width: 100vw; 
+    height: 100vh;
+    overflow: hidden; 
+    background-color: rgba(0,0,0,0.67); /* Black w/ opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContent{
+    background: white;
+    border-radius: 12px;
+    width: 400px;
+    direction: rtl;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.TitleClose{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    
+    .close{
+        font-size: 2em;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .title{
+        font-size: 16px;
+        line-height: 39px;
+        font-weight: 300;
+        flex: 1 1 0%;
+        padding-right: 2rem;
+    }
+}
+
+.IconsSeller{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        .icon{
+            color: white;
+            background-color: #ACC294;
+            padding: 6px;
+            font-size: 2em;
+            border-radius: 4px;
+
+        }
+    }
+
+    .seller{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        .sellerName{
+            color: #6B6B6B;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 30px;
+        }
+
+        .sellerIcon{
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+.ProdutsImage{
+    padding: 0 5rem;
+    
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    .dots{
+        text-align: center;
+        padding: 0 4px;
+        direction: ltr;
+
+        .dot {
+            cursor: pointer;
+            height: 5px;
+            width: 5px;
+            margin: 0 2px;
+            background-color: #A1A1A1;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        
+        .dotSolid{
+            cursor: pointer;
+            height: 6px;
+            width: 19px;
+            margin: 0 2px;
+            background-color: #A1A1A1;
+            border-radius: 8px;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+    }
+}
+
+.StarsOriginal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+    .stars{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+
+        .starsIcons{
+            padding: 0 2px;  
+            font-size: 1em;
+
+            .starsIcon:first-child, 
+            .starsIcon:nth-child(2),
+            .starsIcon:nth-child(3),
+            .starsIcon:nth-child(4)
+            {
+                color: #DD794F;
+            }
+
+            .sellerIcon:nth-child(5){
+                color: #C4C6C2;
+            }
+        }
+
+        .starsAvg{
+            font-size: 10px;
+            color: #B0B0B0;
+        }
+    }
+
+    .original{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        color: #DD794F;
+        font-size: 12;
+    }
+}
+
+.PriceSell{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 36px;
+
+    .sellBtn{
+        background-color: #80AD01;
+        border: none;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 8px;
+        padding: 20px 58px;
+    }
+
+    .price{
+        display: flex;
+        flex-direction: column;
+        direction: rtl;
+        gap: 1rem;
+
+        .DisPre{
+            display: flex;
+            gap: 0.5rem;
+
+            .discount{
+                background-color: #ACC294;
+                border-radius: 2px;
+                padding: 2px 4px;
+                font-size: 14px;
+                color: white;
+            }
+
+            .prePricr{
+                text-decoration: line-through;
+                color: #B0B0B0;
+            }
+        }
+
+        .CurUnit{
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            .curPrice{
+                color: #80AD01;
+                font-size: 20px;
+            }
+
+            .priceUnit{
+                font-size: 12px;
+                font-weight: bold;
+                line-height: 14px;
+                color: #878787;
+            }
+        }
+    }
+}
+/*  */
